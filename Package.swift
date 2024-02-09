@@ -10,25 +10,19 @@ let package = Package(
 			targets: ["GXUCImageGalleryWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.1.0"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXDataLayer.git", exact: "1.1.0"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXFoundation.git", exact: "1.1.0"),
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXObjectsModel.git", exact: "1.1.0")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "1.4.26")
 	],
 	targets: [
 		.target(name: "GXUCImageGalleryWrapper",
 				dependencies: [
 					"GXUCImageGallery",
-					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS])),
-					.product(name: "GXDataLayer", package: "GXDataLayer", condition: .when(platforms: [.iOS])),
-					.product(name: "GXFoundation", package: "GXFoundation", condition: .when(platforms: [.iOS])),
-					.product(name: "GXObjectsModel", package: "GXObjectsModel", condition: .when(platforms: [.iOS]))
+					.product(name: "GXCoreUI", package: "GXCoreUI", condition: .when(platforms: [.iOS]))
 				],
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCImageGallery",
-			url: "https://pkgs.genexus.dev/iOS/releases/GXUCImageGallery-1.1.0.xcframework.zip",
-			checksum: "e965fabbeb12ddee49e072f7559c110055af4781fffd8bc7c90c53fa814331b3"
+			url: "https://pkgs.genexus.dev/iOS/releases/GXUCImageGallery-1.4.26.xcframework.zip",
+			checksum: "04c04f64a7855f2d5efd77228919d2d553e1fb8f899ada49379d3a9cb09c55a0"
 		)
 	]
 )
