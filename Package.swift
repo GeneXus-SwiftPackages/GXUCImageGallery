@@ -1,4 +1,4 @@
-// swift-tools-version: 5.7
+// swift-tools-version: 5.9
 import PackageDescription
 
 let package = Package(
@@ -10,7 +10,7 @@ let package = Package(
 			targets: ["GXUCImageGalleryWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "2.0.0-beta.5")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "2.0.0-beta.6")
 	],
 	targets: [
 		.target(name: "GXUCImageGalleryWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCImageGallery",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXUCImageGallery-2.0.0-beta.5.xcframework.zip",
-			checksum: "b5976a7c2d54e8b2f9dd871e57a4d3ff83ecc2919ec826e1eb60785ec1aafa4f"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXUCImageGallery-2.0.0-beta.6.xcframework.zip",
+			checksum: "837c2380d3261de094db2ebac8b8e5df430ad72006f4c99cd01a82693973968f"
 		)
 	]
 )
