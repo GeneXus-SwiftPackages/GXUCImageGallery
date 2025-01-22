@@ -3,14 +3,14 @@ import PackageDescription
 
 let package = Package(
 	name: "GXUCImageGallery",
-	platforms: [.iOS("13.0")],
+	platforms: [.iOS("15.0")],
 	products: [
 		.library(
 			name: "GXUCImageGallery",
 			targets: ["GXUCImageGalleryWrapper"])
 	],
 	dependencies: [
-		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "3.0.0-beta.8")
+		.package(url: "https://github.com/GeneXus-SwiftPackages/GXCoreUI.git", exact: "3.0.0-beta.9")
 	],
 	targets: [
 		.target(name: "GXUCImageGalleryWrapper",
@@ -21,8 +21,8 @@ let package = Package(
 				path: "Sources"),
 		.binaryTarget(
 			name: "GXUCImageGallery",
-			url: "https://pkgs.genexus.dev/iOS/beta/GXUCImageGallery-3.0.0-beta.8.xcframework.zip",
-			checksum: "cfdb52057578f1a17ac89cbd15920e10d927dcc3acf3162b39c183e4c6f2c429"
+			url: "https://pkgs.genexus.dev/iOS/beta/GXUCImageGallery-3.0.0-beta.9.xcframework.zip",
+			checksum: "4ed4731b3f01ab4ab7b2dc83836e650cde7961e9c509bcb55daf8d9e96d07a57"
 		)
 	]
 )
